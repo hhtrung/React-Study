@@ -15,7 +15,8 @@ class App extends Component {
 
     setInterval(() => {
       this.setState({
-        currentColor: this.getNextColor(this.state.currentColor)
+        currentColor: this.getNextColor(
+          this.state.currentColor)
       });
     }, 1000);
   }
@@ -39,7 +40,7 @@ class App extends Component {
       </div>
     );
   }
-  
+
 }
 
 export default App;
